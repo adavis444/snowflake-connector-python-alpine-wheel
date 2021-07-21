@@ -29,7 +29,7 @@ RUN pip wheel --no-cache-dir -w wheels -f wheels \
 
 
 FROM pyarrow-builder AS snowflake-connector-python-builder
-ARG SNOWFLAKE_CONNECTOR_PYTHON_VERSION=2.4.6
+ARG SNOWFLAKE_CONNECTOR_PYTHON_VERSION=2.5.0
 RUN apk --update add --no-cache \
         cargo \
         gcc \
